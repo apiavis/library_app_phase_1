@@ -1,0 +1,22 @@
+{
+  "name": "library-phase-one-assignment",
+  "version": "1.0.0",
+  "description": "This assignment is the first part of a multi-phase project where we will create a full-stack library application which has a front-end built with HTML CSS and VanillaJS, incorporates indexedDB for client-side storage and utilizes a https://www.getpostman.com/collections/b446217ca5dc2e2a4fe3 to perform CRUD operations on books which come from a Cloud Firestore database that is stored on GCP.  In each phase of the project, we will build upon the functionality of the previous phase and the scope will expand.  The instructional team has done our best to modularize each phase so that the concepts covered line up well with topics which we've covered thus far during the classroom portion of the apprenticeship.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechtonicAcademy/library-phase-one-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechtonicAcademy/library-phase-one-assignment/issues"
+  },
+  "homepage": "https://github.com/TechtonicAcademy/library-phase-one-assignment#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}

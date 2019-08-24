@@ -1,0 +1,334 @@
+/****************** GENERAL ******************/
+body {
+  font-family: "Proxima Nova";
+  background-image: url("../assets/bookshelf_wallpaper.png");
+}
+
+h1, h2 {
+  font-family: "Baskerville";
+}
+
+h1 {
+  font-size: 4em;
+  margin: 25px auto;
+  text-transform: uppercase;
+  letter-spacing: 3px
+}
+
+h2 {
+  font-size: 4em;
+  text-align: right;
+  color: white;
+}
+
+
+
+/****************** HEADER ******************/
+.header-container {
+  height: 100px;
+}
+
+.library-header {
+  padding-top: 25px;
+}
+
+
+
+/****************** BUTTONS ******************/
+.btn:focus {
+  background-color: white;
+}
+
+.btn-column .btn {
+  font-size: 1.05em;
+  padding: 15px;
+  margin: 27px 20px 0px 20px;
+}
+
+.btn .glyphicon {
+  font-size: 0.8em;
+}
+
+.btn:hover {
+  background-color: #e5e5e5;
+}
+
+.btn-remove:hover {
+  color: white;
+  background-color: #c13232;
+}
+
+.btn-add:hover {
+  color: white;
+  background-color: #327a32;
+}
+
+
+
+/****************** JUMBOTRON ******************/
+.jumbotron {
+  height: calc(100vh - 240px);
+  padding-right: 80px;
+  background-image: url("../assets/main_library.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+
+
+/****************** MODALS ******************/
+.modal-dialog {
+  width: 85vw;
+  min-height: 50vh;
+}
+
+.modal-content {
+  width: 85vw;
+  min-height: 50vh;
+}
+
+.modal-position {
+  position: fixed;
+  padding-top: 120px;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#bookDisplayModal {
+  padding-top: 5vh;
+}
+
+#bookDisplayModal .modal-content {
+  height: 85vh;
+}
+
+#bookDisplayModal .modal-body {
+  height: 80%;
+}
+
+.add-book-message {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: green;
+}
+
+.counter-message {
+  position: relative;
+  top: 8px;
+  font-weight: bold;
+  color: green;
+}
+
+#authorModal {
+  font-size: 1.4em;
+}
+
+#bookDisplayModal h4 {
+  font-size: 2em;
+  margin-left: 15px;
+}
+
+
+#bookDisplayModal .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bookDisplayModal .modal-sidebar {
+  font-size: 1.1em;
+}
+
+.book-cover img {
+  width: 200px;
+  height: 300px;
+} 
+
+.synopsis {
+  width: 100%;
+}
+
+
+
+/***************** NAVBAR ******************/
+.navbar-container {
+  height: 75px;
+
+}
+.navbar {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+
+/****************** TABLE ******************/
+.table {
+  background-color: white;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  margin-bottom: 0;
+}
+
+td {
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  padding: 2px;
+}
+
+td.glyphicon {
+  color: #d3a20e;
+}
+
+.synopsis-stretch {
+  width: 30%;
+}
+
+#dataTable tr {
+  border: 1px solid black;
+  max-height: 85px;
+}
+
+.tableImg{
+  height: 83px;
+  width: 83px;
+}
+
+.star-rating {
+  color: #d3a20e;
+  line-height: 10px;
+}
+
+.book-title {
+  font-family: "Baskerville";
+  font-size: 1.2em;
+}
+
+.checked {
+  color: orange;
+}
+
+
+
+/****************** FOOTER ******************/
+.footer-container {
+  height: 40px
+}
+.footer-container div {
+  padding: 3px;
+}
+.footer-copyright {
+  padding: 15px 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e2e2e2;
+}
+
+
+
+/****************** MEDIA QUERIES ******************/
+@media(max-width: 875px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.3em
+  }
+}
+
+
+@media(max-width: 770px){
+  .jumbotron {
+    height: calc(100vh - 297px)
+  }
+  .navbar-container {
+    height: 150px;
+  }
+  .navbar-container form {
+    height: 150px;
+  }
+  .pull-right {
+    clear: right;
+  }
+  .pull-left {
+    clear: left;
+  }
+  .navbar-btn {
+    margin: 0 auto;
+    width: 160px;
+  }
+  .navbar-inputs-stack input {
+    width: 160px;
+    margin: 3px auto;
+  }
+  .vert-spacing {
+    margin: 5px;
+    padding: 12px 12px;
+  }
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.3em
+  }
+  td {
+    font-size: 11px;
+  }
+}
+
+
+
+@media (max-width: 680px) {
+  .btn-column .btn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  h1 {
+    font-size: 2.25em
+  }
+  h2 {
+    font-size: 2em;
+  }
+  tr, tr td {
+    max-height: 90px;
+  }
+  .tableImg {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+
+@media (max-width: 543px) {
+  .modal-content, .modal-dialog {
+    width: 98% !important;
+  }
+
+  .navbar-btn, .navbar-inputs-stack input {
+    width: 120px;
+  }
+  .jumbotron {
+    height: calc(100vh - 322px)
+  }
+  table {
+    font-size: 13px;
+  }
+  tr, tr td {
+    max-height: 70px;
+    text-overflow: ellipsis
+  }
+  .tableImg {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  table {
+    font-size: 10px;
+  }
+}
